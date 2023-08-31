@@ -1,0 +1,80 @@
+:root {
+    --color-primary-dark: #011C44;
+    --color-primary-light: #2B7FFF;
+    --color-secondary-dark: #747272;
+    --color-secondary-light: #FFFFFF;
+}
+
+/*Base*/
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+body {
+    color: var(--color-primary-dark)
+}
+
+.accent {
+    color: var(--color-primary-light)
+}
+
+/*Header*/
+.header-link {
+    color: var(--color-primary-dark)
+}
+
+.header-link:hover {
+    color: var(--color-primary-light)
+}
+
+/*Main section*/
+.main-title {
+    color: var(--color-primary-light)
+}
+
+/*Button*/
+.main-button {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    color: var(--color-secondary-light);
+    border-radius: 32px; 
+    border-color: var(--color-primary-light);
+}
+
+.main-button:hover {
+    border: 2px solid var(--color-primary-light);
+    background-color: transparent; 
+    color: var(--color-primary-dark);
+}
+
+/*Section Why*/
+.mini-block { 
+    background-color: var(--color-secondary-light);
+    border-radius: 32px;
+}
+/*Form*/
+.form-title {
+    color:var(--color-secondary-light)
+}
+
+.input-field {
+    color: var(--color-secondary-light)
+}
+
+.secondary-info {
+    color: var(--color-secondary-dark)
+}
+
+/*Footer*/
+.footer-link {
+    color: var(--color-secondary-light)
+}
+
+.footer-link:hover {
+    color: var(--color-primary-light)
+}
