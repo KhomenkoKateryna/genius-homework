@@ -1,3 +1,41 @@
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+/* play-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
 :root {
     --color-primary-dark: #011C44;
     --color-primary-light: #2B7FFF;
@@ -16,25 +54,46 @@ ol {
 }
 
 body {
-    color: var(--color-primary-dark)
+    color: var(--color-primary-dark);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: Play, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+#about-us h2 {
+    text-align: left;
 }
 
 .accent {
-    color: var(--color-primary-light)
+    color: var(--color-primary-light);
 }
 
 /*Header*/
 .header-link {
-    color: var(--color-primary-dark)
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    line-height: 1.2;
 }
 
 .header-link:hover {
-    color: var(--color-primary-light)
+    color: var(--color-primary-light);
 }
 
 /*Main section*/
 .main-title {
-    color: var(--color-primary-light)
+    color: var(--color-primary-light);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.8;
+
 }
 
 /*Button*/
@@ -44,6 +103,7 @@ body {
     color: var(--color-secondary-light);
     border-radius: 32px; 
     border-color: var(--color-primary-light);
+    font-weight: 600;
 }
 
 .main-button:hover {
@@ -52,29 +112,60 @@ body {
     color: var(--color-primary-dark);
 }
 
+.underbutton-text {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/*Section About*/
+.about-text {
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.about-text span {
+    font-weight: 600;
+    text-transform: capitalize;
+}
 /*Section Why*/
 .mini-block { 
     background-color: var(--color-secondary-light);
     border-radius: 32px;
+    text-align: center;
 }
+
 /*Form*/
 .form-title {
-    color:var(--color-secondary-light)
+    color:var(--color-secondary-light);
 }
 
 .input-field {
-    color: var(--color-secondary-light)
+    color: var(--color-secondary-light);
 }
 
 .secondary-info {
-    color: var(--color-secondary-dark)
+    color: var(--color-secondary-dark);
+    
+}
+
+.secondary-info a {
+    color: var(--color-secondary-dark);
 }
 
 /*Footer*/
 .footer-link {
-    color: var(--color-secondary-light)
+    color: var(--color-secondary-light);
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .footer-link:hover {
-    color: var(--color-primary-light)
+    color: var(--color-primary-light);
+}
+
+.footer-copy {
+    color: var(--color-secondary-dark);
+    font-size: 13px;
+    line-height: 1.2;
 }
