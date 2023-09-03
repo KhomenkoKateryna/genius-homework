@@ -44,12 +44,11 @@
 }
 
 /*Base*/
-
-ul {
-    list-style-type: none;
+* {
+box-sizing: border-box;
 }
 
-ol {
+ul, ol {
     list-style-type: none;
 }
 
@@ -58,6 +57,15 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -66,13 +74,23 @@ h2 {
     font-weight: 700;
     line-height: 1.15;
     text-align: center;
-}
-#about-us h2 {
+    margin-bottom: 48px;
+} 
+
+section:nth-of-type(2) h2 {
     text-align: left;
+    margin-bottom: 40px;
 }
 
 .accent {
     color: var(--color-primary-light);
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 /*Header*/
@@ -87,16 +105,32 @@ h2 {
 }
 
 /*Main section*/
+.main-section {
+    padding-top: 16.52px;
+    padding-bottom: 63.24px;
+}
+
+.first-paragraph {
+margin-bottom: 16px;
+}
+
 .main-title {
     color: var(--color-primary-light);
     font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 140px;
     line-height: 0.8;
-
 }
 
-/*Button*/
+.main-section button {
+    margin-bottom: 14px;
+}
+
+.calltoaction {
+    margin-bottom: 0;
+}
+
+/*Buttons*/
 .main-button {
     border: 2px solid var(--color-primary-light);
     background-color: var(--color-primary-light);
@@ -118,25 +152,51 @@ h2 {
 }
 
 /*Section About*/
+.about-section {
+    padding-top: 63.24px;
+    padding-bottom: 88px;
+}
 .about-text {
     font-size: 22px;
     line-height: 1.7;
 }
-
+.about-text p:first-child {
+    margin-bottom: 40px;
+}
+.about-text p:last-child {
+       margin-bottom: 0px;
+}
 .about-text span {
     font-weight: 600;
     text-transform: capitalize;
 }
-/*Section Why*/
-.mini-block { 
+
+/*Advantages section*/
+.advantages-section {
+padding-top: 88px;
+padding-bottom: 48px;
+}
+
+.advantages-list { 
     background-color: var(--color-secondary-light);
     border-radius: 32px;
     text-align: center;
 }
 
+/*Procedures section*/
+.procedures-section {
+padding: 48px 0;
+}
+
+/*Contacts section*/
+.contacts-section {
+padding: 48px 0;
+}
+
 /*Form*/
 .form-title {
     color:var(--color-secondary-light);
+    margin-bottom: 32px;
 }
 
 .input-field {
