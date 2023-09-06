@@ -50,6 +50,8 @@ box-sizing: border-box;
 
 ul, ol {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -58,7 +60,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     margin: 0;
-}
+   }
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
@@ -94,7 +96,28 @@ section:nth-of-type(2) h2 {
 }
 
 /*Header*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    fill: var(--color-primary-dark);
+    gap: 32px
+}
+
 .header-link {
+    display: flex;
     color: var(--color-primary-dark);
     text-decoration: none;
     line-height: 1.2;
@@ -106,8 +129,12 @@ section:nth-of-type(2) h2 {
 
 /*Main section*/
 .main-section {
-    padding-top: 16.52px;
-    padding-bottom: 63.24px;
+    padding: 122.52px 705px 156.81px 206px;
+    background-image: linear-gradient(to right #FFFFFF 0% #FFFFFF 19.32% #FFFFFF 85.09% #FFFFFF 100%);
+    background-image: url(./images/main-section-backrgound.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
 
 .first-paragraph {
@@ -120,6 +147,8 @@ margin-bottom: 16px;
     font-weight: 700;
     font-size: 140px;
     line-height: 0.8;
+    max-width: 529px;
+    max-height: 228px;
 }
 
 .main-section button {
@@ -156,25 +185,47 @@ margin-bottom: 16px;
     padding-top: 63.24px;
     padding-bottom: 88px;
 }
-.about-text {
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-content {
     font-size: 22px;
     line-height: 1.7;
+    width: 100%;
+    max-width: 709px;
 }
-.about-text p:first-child {
+
+.about-content p {
     margin-bottom: 40px;
 }
-.about-text p:last-child {
+
+.about-content p:last-child {
        margin-bottom: 0px;
 }
-.about-text span {
+.about-content span {
     font-weight: 600;
     text-transform: capitalize;
 }
 
+.about-images img:last-child {
+    padding-left: 172px;
+}
+
 /*Advantages section*/
 .advantages-section {
-padding-top: 88px;
-padding-bottom: 48px;
+    padding-top: 88px;
+    padding-bottom: 48px;
+    background-color: var(--color-secondary-light);
+    background-image: url(./images/gradiend-background.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 1849px 1785px;
 }
 
 .advantages-list { 
@@ -183,14 +234,63 @@ padding-bottom: 48px;
     text-align: center;
 }
 
+.advantages-items {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secondary-light);
+    border-radius: 32px;
+    padding: 24px 32px;
+}
+
+.advantages-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.advantages-item p {
+    width: 252px;
+    height: 72px;
+    margin: 0;
+}
+
 /*Procedures section*/
+.procedures-container {
+    display: flex;
+    justify-content: center;
+    gap: 208px;
+}
+
 .procedures-section {
-padding: 48px 0;
+    padding: 48px 0;
+}
+
+h3 {
+    margin: 372px 77px 32px 115px;
+    width: 100%;
+    max-width: 152px;
+    max-height: 52px;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center; 
 }
 
 /*Contacts section*/
 .contacts-section {
-padding: 48px 0;
+    padding: 48px 0;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: start;
+    gap: 32px;
 }
 
 /*Form*/
@@ -213,15 +313,35 @@ padding: 48px 0;
 }
 
 /*Footer*/
+.foter-container {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    padding: 56px 100px;
+    background-color: var(--color-primary-dark);
+    background-image: url(./images/footer-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .footer-link {
+    display: flex;
     color: var(--color-secondary-light);
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 16px;
     text-decoration: none;
+    font-style: normal;
 }
 
-.footer-link:hover {
-    color: var(--color-primary-light);
+.footer-icons {
+    display: flex;
+    fill: var(--color-secondary-light);
+    gap: 24px;
+}
+
+footer svg {
+    fill: var(--color-secondary-light);
 }
 
 .footer-copy {
