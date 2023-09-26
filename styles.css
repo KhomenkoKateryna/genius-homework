@@ -271,6 +271,18 @@ margin-bottom: 16px;
     height: 40px;
     top: 32px;
     right: -27px;
+    animation: scale-spin1 0.5s linear;
+}
+
+@keyframes scale-spin1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+}
+
 }
 
 .about-img-after::before {
@@ -279,6 +291,17 @@ margin-bottom: 16px;
     height: 64px;
     top: 22px;
     right: 303px;
+    animation: scale-spin3 0.5s linear 0.7s;
+}
+
+@keyframes scale-spin3 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
 }
 
 .about-img-after::after {
@@ -287,6 +310,17 @@ margin-bottom: 16px;
     height: 16px;
     top: -77px;
     right: 0px;
+    animation: scale-spin2 0.5s linear 0.3s;
+}
+
+@keyframes scale-spin2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
 }
 
 /*Advantages section*/
