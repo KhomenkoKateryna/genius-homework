@@ -101,11 +101,7 @@
                 <img src="./images/after.png" alt="Жінка після" />
               </div>
             </div>
-            <div class="star-middle">
-              <svg width="40" height="40">
-                <use href="./images/Star-middle-blue.svg"></use>
-              </svg>
-            </div>
+            <div class="star-middle"></div>
           </div>
         </div>
       </section>
@@ -321,8 +317,8 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">
-          <svg width="16" height="16">
-            <use href="./images/close-button-icon.svg"></use>
+          <svg width="32" height="32">
+            <image href="./images/modal-btn-close.svg" />
           </svg>
         </button>
         <h2>Замовити дзвінок</h2>
@@ -330,7 +326,7 @@
           Запишіться <span class="accent">безкоштовно</span> та отримайте
           подарунок
         </p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="contact-form" autocomplete="off">
           <div>
             <label class="visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -340,6 +336,8 @@
               id="user-name"
               name="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
             />
           </div>
           <div>
@@ -351,6 +349,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Ваш номер телефону"
+              required
+              pattern="^\+[0-9]{12}"
             />
           </div>
           <div>
@@ -362,6 +362,7 @@
               id="user-email"
               name="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
           <button class="form-button main-button" type="submit">
