@@ -1,0 +1,55 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 32px 0;
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: center;
+        gap: 56px;
+    }
+    
+    &__link {
+        display: flex;
+        color: var(--color-primary-dark);
+        text-decoration: none;
+        line-height: 1.2;
+        transition: color .3s;
+
+        &:hover {
+            color: var(--color-primary-light);
+        }
+    }
+
+   &__icons {
+       display: flex;
+       justify-content: center;
+       fill: var(--color-primary-dark);
+       gap: 32px;
+       transition: color .3s;
+
+        &:hover {
+            fill: var(--color-secondary-light);
+        }
+   }
+}
+
+
+
+
+
+
+
+
+
