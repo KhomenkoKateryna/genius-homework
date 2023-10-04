@@ -32,24 +32,17 @@
         }
     }
 
-   &__icons {
+   &__socials {
        display: flex;
        justify-content: center;
-       fill: var(--color-primary-dark);
        gap: 32px;
-       transition: color .3s;
+       transition: color .3s; 
+   }
 
+   &__icon {
+        fill: var(--color-primary-dark);
         &:hover {
-            fill: var(--color-secondary-light);
-        }
+                fill: var(--color-secondary-light);
+            }
    }
 }
-
-
-
-
-
-
-
-
-
